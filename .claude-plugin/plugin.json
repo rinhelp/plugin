@@ -1,0 +1,9 @@
+{
+  "name": "rinhelp",
+  "description": "Work Rinhelp support Conversations from your AI app.",
+  "version": "0.1.0",
+  "homepage": "https://rinhelp.com",
+  "author": {
+    "name": "Rinhelp"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "rinhelp",
+  "owner": {
+    "name": "Rinhelp"
+  },
+  "plugins": [
+    {
+      "name": "rinhelp",
+      "source": "./",
+      "description": "Work Rinhelp support Conversations from your AI app."
+    }
+  ],
+  "metadata": {
+    "description": "Rinhelp for AI apps."
+  }
+}
