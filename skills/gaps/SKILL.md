@@ -7,7 +7,7 @@ description: Close Rinhelp Knowledge gaps, the customer questions Rin couldn't a
 
 Rin tags a Conversation "Knowledge gap" when a Contact asks something Knowledge doesn't cover. Turn each gap into an Article, then prove Rin answers it.
 
-1. `knowledge_gap_list` gives the questions from the last 30 days, or from the date your Member names.
+1. `knowledge_gap_list` gives the questions from the last 30 days, or from the date your Member names. Pass its `next` back as `cursor` until `next` is null, so you have every question.
 2. `knowledge_search` each question. Evidence returned means it's already covered: set it aside.
 3. Group the rest by the answer they need. One Article answers one topic, and several questions can share it.
 4. `article_list` shows the Sections and Articles. For each group, pick an Article to extend, else a Section for a new Article.
