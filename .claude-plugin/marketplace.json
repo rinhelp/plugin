@@ -6,8 +6,7 @@
   "plugins": [
     {
       "name": "rinhelp",
-      "source": "./",
-      "description": "Answer your Rinhelp customers, and grow your help center from the questions Rin couldn't answer."
+      "source": "./"
     }
   ],
   "metadata": {

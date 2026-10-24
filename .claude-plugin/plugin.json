@@ -1,12 +1,24 @@
 {
   "name": "rinhelp",
-  "description": "Answer your Rinhelp customers, and grow your help center from the questions Rin couldn't answer.",
-  "version": "0.2.0",
+  "description": "Answer customers from your Rinhelp help desk, and grow your help center from the questions Rin couldn't answer.",
+  "version": "0.2.1",
   "homepage": "https://rinhelp.com",
   "author": {
     "name": "Rinhelp"
   },
   "license": "MIT",
+  "keywords": [
+    "customer support",
+    "customer service",
+    "help desk",
+    "helpdesk",
+    "shared inbox",
+    "support inbox",
+    "help center",
+    "knowledge base",
+    "ai support",
+    "live chat"
+  ],
   "repository": "https://github.com/rinhelp/plugin",
   "icon": ".claude-plugin/icon.png",
   "documentationUrl": "https://rinhelp.com/docs/agents/connect",
