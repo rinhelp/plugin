@@ -21,4 +21,4 @@ In Claude Code:
 
 Then type `/mcp`, choose rinhelp and sign in.
 
-See [Connect your AI agent](https://rinhelp.com/docs/agents/connect) for other apps.
+See [Connect your AI agent](https://docs.rinhelp.com/articles/98a0def1-a07d-4c34-9f19-4d168626b40c-connect-your-ai-agent) for other apps.
