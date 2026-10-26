@@ -22,6 +22,7 @@
   "repository": "https://github.com/rinhelp/plugin",
   "icon": ".claude-plugin/icon.png",
   "documentationUrl": "https://rinhelp.com/docs/agents/connect",
+  "supportUrl": "mailto:support@rinhelp.com",
   "privacyPolicyUrl": "https://rinhelp.com/privacy",
   "termsOfServiceUrl": "https://rinhelp.com/terms"
 }
