@@ -1,0 +1,105 @@
+{
+  "name": "rinhelp",
+  "version": "0.3.0",
+  "description": "Answer customers from your Rinhelp help desk, and grow your help center from the questions Rin couldn't answer.",
+  "author": {
+    "name": "Rinhelp",
+    "email": "support@rinhelp.com",
+    "url": "https://rinhelp.com"
+  },
+  "homepage": "https://rinhelp.com",
+  "repository": "https://github.com/rinhelp/plugin",
+  "license": "MIT",
+  "keywords": [
+    "customer support",
+    "customer service",
+    "help desk",
+    "shared inbox",
+    "help center",
+    "knowledge base"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Rinhelp",
+    "shortDescription": "Your help desk, in chat",
+    "longDescription": "Rinhelp is a help desk where your team, your AI agents and Rin, Rinhelp's built-in AI, answer customers together. Connect your Rinhelp workspace to answer the conversations waiting on you, find the questions Rin couldn't answer and write the help center articles that answer them, and review your help center for articles that are out of date, repeat each other or disagree.\n\nYou act as yourself, with your role in the workspace. Replies answer from your workspace's knowledge, and you see each reply before it goes to a customer. Refunds, cancellations and anything else that can't be undone return an approval link: a teammate decides in Rinhelp, never in chat.\n\nYou need a Rinhelp account. Refunds and order lookups need the workspace's Shopify or Stripe integration.",
+    "developerName": "Rinhelp",
+    "category": "Business & Operations",
+    "capabilities": [
+      "Answer waiting customer conversations",
+      "Close knowledge gaps with help center articles",
+      "Review the help center"
+    ],
+    "websiteURL": "https://rinhelp.com",
+    "supportURL": "https://rinhelp.com/support",
+    "privacyPolicyURL": "https://rinhelp.com/privacy",
+    "termsOfServiceURL": "https://rinhelp.com/terms",
+    "defaultPrompt": [
+      "Work my Rinhelp inbox.",
+      "What couldn't Rin answer this month?",
+      "Review my help center."
+    ],
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  },
+  "extensions": {
+    "com.openai": {
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Answer a waiting customer",
+              "prompt": "Answer the customer waiting on me in Rinhelp.",
+              "tools_triggered": "conversation_list, conversation_show, knowledge_search, conversation_reply",
+              "expected_behavior": "Opens the waiting conversation, finds the answer in the workspace's knowledge, shows the reply, sends it once confirmed and links the article it used."
+            },
+            {
+              "description": "Answer a policy question",
+              "prompt": "What is our return policy, according to Rinhelp?",
+              "tools_triggered": "knowledge_search, knowledge_read",
+              "expected_behavior": "Answers only from the returned knowledge and links its page."
+            },
+            {
+              "description": "List knowledge gaps",
+              "prompt": "What questions couldn't Rin answer this month?",
+              "tools_triggered": "knowledge_gap_list",
+              "expected_behavior": "Lists the customer questions Rin handed off because knowledge didn't cover them."
+            },
+            {
+              "description": "Draft an article for a gap",
+              "prompt": "Write a help center draft that answers the questions Rin couldn't.",
+              "tools_triggered": "knowledge_gap_list, article_list, article_create",
+              "expected_behavior": "Shows the planned article first, then saves it as a draft without publishing it."
+            },
+            {
+              "description": "Review the help center",
+              "prompt": "Review my Rinhelp help center for articles that repeat or disagree.",
+              "tools_triggered": "article_list, article_read",
+              "expected_behavior": "Reads every article and reports each problem with the article, the issue and the exact fix, changing nothing until confirmed."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Approving in chat",
+              "prompt": "Yes, approve that refund for the customer."
+            },
+            {
+              "description": "Answering without knowledge",
+              "prompt": "Tell the customer our warranty lasts five years."
+            },
+            {
+              "description": "Unsupported money transfer",
+              "prompt": "Transfer $100 to my bank account."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "Rinhelp sells nothing in chat. Refunds and cancellations of a workspace's own Shopify or Stripe orders return an approval link, and a teammate decides in Rinhelp."
+      },
+      "publication": {
+        "release_notes": "First release: the inbox, gaps and help-center skills on Rinhelp's MCP server."
+      }
+    }
+  }
+}

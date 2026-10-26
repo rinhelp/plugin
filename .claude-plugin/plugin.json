@@ -1,7 +1,7 @@
 {
   "name": "rinhelp",
   "description": "Answer customers from your Rinhelp help desk, and grow your help center from the questions Rin couldn't answer.",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "homepage": "https://rinhelp.com",
   "author": {
     "name": "Rinhelp"
@@ -20,9 +20,9 @@
     "live chat"
   ],
   "repository": "https://github.com/rinhelp/plugin",
-  "icon": ".claude-plugin/icon.png",
+  "icon": "./assets/icon.png",
   "documentationUrl": "https://docs.rinhelp.com/articles/98a0def1-a07d-4c34-9f19-4d168626b40c-connect-your-ai-agent",
-  "supportUrl": "mailto:support@rinhelp.com",
+  "supportUrl": "https://rinhelp.com/support",
   "privacyPolicyUrl": "https://rinhelp.com/privacy",
   "termsOfServiceUrl": "https://rinhelp.com/terms"
 }
