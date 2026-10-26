@@ -94,6 +94,7 @@
             }
           ]
         },
+        "demo_recording_url": "https://youtu.be/CZUc1OHix9s",
         "commerce": false,
         "commerce_description": "Rinhelp sells nothing in chat. Refunds and cancellations of a workspace's own Shopify or Stripe orders return an approval link, and a teammate decides in Rinhelp."
       },
