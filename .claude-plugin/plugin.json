@@ -1,6 +1,6 @@
 {
   "name": "rinhelp",
-  "description": "Answer customers from your Rinhelp help desk, and grow your help center from the questions Rin couldn't answer.",
+  "description": "Answer customers in Rinhelp, turn the questions Rin couldn't answer into help center articles, and keep your help center accurate.",
   "version": "0.3.0",
   "homepage": "https://rinhelp.com",
   "author": {

@@ -1,7 +1,7 @@
 {
   "name": "rinhelp",
   "version": "0.3.0",
-  "description": "Answer customers from your Rinhelp help desk, and grow your help center from the questions Rin couldn't answer.",
+  "description": "Answer customers in Rinhelp, turn the questions Rin couldn't answer into help center articles, and keep your help center accurate.",
   "author": {
     "name": "Rinhelp",
     "email": "support@rinhelp.com",
@@ -22,14 +22,14 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Rinhelp",
-    "shortDescription": "Your help desk, in chat",
-    "longDescription": "Rinhelp is a help desk where your team, your AI agents and Rin, Rinhelp's built-in AI, answer customers together. Connect your Rinhelp workspace to answer the conversations waiting on you, find the questions Rin couldn't answer and write the help center articles that answer them, and review your help center for articles that are out of date, repeat each other or disagree.\n\nYou act as yourself, with your role in the workspace. Replies answer from your workspace's knowledge, and you see each reply before it goes to a customer. Refunds, cancellations and anything else that can't be undone return an approval link: a teammate decides in Rinhelp, never in chat.\n\nYou need a Rinhelp account. Refunds and order lookups need the workspace's Shopify or Stripe integration.",
+    "shortDescription": "Answer customers and fix your help center",
+    "longDescription": "Rinhelp is a help desk where your team, your AI agents and Rin, Rinhelp's built-in AI, answer customers together. Connect your workspace to answer the conversations waiting on you from your own knowledge, turn the questions Rin couldn't answer into help center articles and check that Rin answers them now, and find articles that are out of date, repeat each other or disagree.\n\nIt acts as you, with your role, and you see every reply before a customer does. Refunds, cancellations and anything else that can't be undone return an approval link, and a teammate decides in Rinhelp, never in chat.\n\nYou need a Rinhelp account. Order lookups and refunds need the workspace's Shopify or Stripe integration.",
     "developerName": "Rinhelp",
     "category": "Business & Operations",
     "capabilities": [
-      "Answer waiting customer conversations",
-      "Close knowledge gaps with help center articles",
-      "Review the help center"
+      "Answer waiting customers",
+      "Turn unanswered questions into articles",
+      "Find stale or conflicting articles"
     ],
     "websiteURL": "https://rinhelp.com",
     "supportURL": "https://rinhelp.com/support",
@@ -73,7 +73,7 @@
               "expected_behavior": "Shows the planned article first, then saves it as a draft without publishing it."
             },
             {
-              "description": "Review the help center",
+              "description": "Find stale or conflicting articles",
               "prompt": "Review my Rinhelp help center for articles that repeat or disagree.",
               "tools_triggered": "article_list, article_read",
               "expected_behavior": "Reads every article and reports each problem with the article, the issue and the exact fix, changing nothing until confirmed."
