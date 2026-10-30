@@ -22,7 +22,7 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Rinhelp",
-    "shortDescription": "Answer customers and fix your help center",
+    "shortDescription": "Answer customers, fix articles",
     "longDescription": "Rinhelp is a help desk where your team, your AI agents and Rin, Rinhelp's built-in AI, answer customers together. Connect your workspace to answer the conversations waiting on you from your own knowledge, turn the questions Rin couldn't answer into help center articles and check that Rin answers them now, and find articles that are out of date, repeat each other or disagree.\n\nIt acts as you, with your role, and you see every reply before a customer does. Refunds, cancellations and anything else that can't be undone return an approval link, and a teammate decides in Rinhelp, never in chat.\n\nYou need a Rinhelp account. Order lookups and refunds need the workspace's Shopify or Stripe integration.",
     "developerName": "Rinhelp",
     "category": "Business & Operations",
