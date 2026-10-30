@@ -1,5 +1,13 @@
 {
   "mcpServers": {
-    "rinhelp": { "type": "http", "url": "https://mcp.rinhelp.com/mcp" }
+    "rinhelp": {
+      "type": "http",
+      "url": "https://mcp.rinhelp.com/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": { "type": "oauth", "client": { "mode": "cimd" } }
+        }
+      }
+    }
   }
 }
