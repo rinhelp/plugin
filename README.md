@@ -1,10 +1,11 @@
 # Rinhelp for Claude and ChatGPT
 
-Rinhelp is a help desk where your team, your AI agents and Rin, Rinhelp's built-in AI, answer customers together. This plugin connects Claude or ChatGPT to your Rinhelp workspace and adds three skills:
+Rinhelp is a help desk where your team, your AI agents and Rin, Rinhelp's built-in AI, answer customers together. This plugin connects Claude or ChatGPT to your Rinhelp workspace and adds four skills:
 
 - **inbox**: answer the conversations waiting on you.
 - **gaps**: find the questions Rin couldn't answer, write the help center articles that answer them, then test Rin to show it answers now.
 - **help-center**: review your help center for articles that are out of date, repeat each other or disagree.
+- **migrate**: move from another help desk, with its help center, saved replies, past conversations and files.
 
 It acts as you, with your role. Refunds, cancellations and anything else that moves money or can't be undone wait for a teammate to approve them in Rinhelp.
 

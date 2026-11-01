@@ -1,6 +1,6 @@
 {
   "name": "rinhelp",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Answer customers in Rinhelp, turn the questions Rin couldn't answer into help center articles, and keep your help center accurate.",
   "author": {
     "name": "Rinhelp",
