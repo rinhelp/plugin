@@ -38,7 +38,7 @@
     "termsOfServiceURL": "https://rinhelp.com/terms",
     "defaultPrompt": [
       "Work my Rinhelp inbox.",
-      "What couldn't Rin answer this month?",
+      "What couldn't Rin answer in the last 30 days?",
       "Review my help center."
     ],
     "composerIcon": "./assets/icon.png",
@@ -63,7 +63,7 @@
             },
             {
               "description": "List knowledge gaps",
-              "prompt": "What questions couldn't Rin answer this month?",
+              "prompt": "What questions couldn't Rin answer in the last 30 days?",
               "tools_triggered": "knowledge_gap_list",
               "expected_behavior": "Lists the customer questions Rin handed off because knowledge didn't cover them."
             },
