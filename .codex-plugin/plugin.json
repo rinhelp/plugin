@@ -39,8 +39,7 @@
     "defaultPrompt": [
       "Work my Rinhelp inbox.",
       "What couldn't Rin answer this month?",
-      "Review my help center.",
-      "Move my help center from Zendesk to Rinhelp."
+      "Review my help center."
     ],
     "composerIcon": "./assets/icon.png",
     "logo": "./assets/icon.png"
