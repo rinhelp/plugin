@@ -23,13 +23,14 @@
   "interface": {
     "displayName": "Rinhelp",
     "shortDescription": "Answer customers, fix articles",
-    "longDescription": "Rinhelp is a help desk where your team, your AI agents and Rin, Rinhelp's built-in AI, answer customers together. Connect your workspace to answer the conversations waiting on you from your own knowledge, turn the questions Rin couldn't answer into help center articles and check that Rin answers them now, and find articles that are out of date, repeat each other or disagree.\n\nIt acts as you, with your role, and you see every reply before a customer does. Refunds, cancellations and anything else that can't be undone return an approval link, and a teammate decides in Rinhelp, never in chat.\n\nYou need a Rinhelp account. Order lookups and refunds need the workspace's Shopify or Stripe integration.",
+    "longDescription": "Rinhelp is a help desk where your team, your AI agents and Rin, Rinhelp's built-in AI, answer customers together. Connect your workspace to answer the conversations waiting on you from your own knowledge, turn the questions Rin couldn't answer into help center articles and check that Rin answers them now, find articles that are out of date, repeat each other or disagree, and move from Zendesk, Intercom, Help Scout or another help desk with your help center and saved replies.\n\nIt acts as you, with your role, and you see every reply before a customer does. Refunds, cancellations and anything else that can't be undone return an approval link, and a teammate decides in Rinhelp, never in chat.\n\nYou need a Rinhelp account. Order lookups and refunds need the workspace's Shopify or Stripe integration.",
     "developerName": "Rinhelp",
     "category": "Business & Operations",
     "capabilities": [
       "Answer waiting customers",
       "Turn unanswered questions into articles",
-      "Find stale or conflicting articles"
+      "Find stale or conflicting articles",
+      "Move from another help desk"
     ],
     "websiteURL": "https://rinhelp.com",
     "supportURL": "https://rinhelp.com/support",
@@ -38,7 +39,8 @@
     "defaultPrompt": [
       "Work my Rinhelp inbox.",
       "What couldn't Rin answer this month?",
-      "Review my help center."
+      "Review my help center.",
+      "Move my help center from Zendesk to Rinhelp."
     ],
     "composerIcon": "./assets/icon.png",
     "logo": "./assets/icon.png"
@@ -99,7 +101,7 @@
         "commerce_description": "Rinhelp sells nothing in chat. Refunds and cancellations of a workspace's own Shopify or Stripe orders return an approval link, and a teammate decides in Rinhelp."
       },
       "publication": {
-        "release_notes": "First release: the inbox, gaps and help-center skills on Rinhelp's MCP server."
+        "release_notes": "First release: the inbox, gaps, help-center and migrate skills on Rinhelp's MCP server."
       }
     }
   }
