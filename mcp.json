@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "rinhelp": {
+      "url": "https://mcp.rinhelp.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${RINHELP_API_KEY}"
+      }
+    }
+  }
+}
