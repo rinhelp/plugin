@@ -28,4 +28,14 @@ In the ChatGPT desktop app, add the marketplace, restart the app, then install *
 codex plugin marketplace add rinhelp/plugin
 ```
 
+Gemini CLI and Cursor connect with an API key. In Rinhelp, open **Settings**, then **AI agents**, and under **API keys** choose **Create key**.
+
+In Gemini CLI, install the extension and paste the key when asked:
+
+```bash
+gemini extensions install https://github.com/rinhelp/plugin
+```
+
+In Cursor, install **Rinhelp** from the Marketplace, then paste the key under **Plugins**, **Configure**.
+
 See [Connect your AI agent](https://docs.rinhelp.com/articles/98a0def1-a07d-4c34-9f19-4d168626b40c-connect-your-ai-agent) for other apps.

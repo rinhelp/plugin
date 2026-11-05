@@ -1,0 +1,21 @@
+{
+  "name": "rinhelp",
+  "version": "0.4.0",
+  "description": "Answer customers in Rinhelp, turn the questions Rin couldn't answer into help center articles, and keep your help center accurate.",
+  "settings": [
+    {
+      "name": "Rinhelp API key",
+      "description": "Create one in Rinhelp under Settings > AI agents > API keys.",
+      "envVar": "RINHELP_API_KEY",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "rinhelp": {
+      "httpUrl": "https://mcp.rinhelp.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${RINHELP_API_KEY}"
+      }
+    }
+  }
+}
