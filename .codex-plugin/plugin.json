@@ -1,7 +1,7 @@
 {
   "name": "rinhelp",
-  "version": "0.4.0",
-  "description": "Answer customers in Rinhelp, turn the questions Rin couldn't answer into help center articles, and keep your help center accurate.",
+  "version": "0.4.1",
+  "description": "Answer customers in Rinhelp, turn the questions Rin couldn't answer into help center articles, keep your help center accurate and move from another help desk.",
   "author": {
     "name": "Rinhelp",
     "email": "support@rinhelp.com",
@@ -100,7 +100,7 @@
         "commerce_description": "Rinhelp sells nothing in chat. Refunds and cancellations of a workspace's own Shopify or Stripe orders return an approval link, and a teammate decides in Rinhelp."
       },
       "publication": {
-        "release_notes": "First release: the inbox, gaps, help-center and migrate skills on Rinhelp's MCP server."
+        "release_notes": "First release: the inbox, gaps, help-center and migrate skills on Rinhelp's MCP server. The migrate skill carries its steps in the plugin and loads nothing from the web."
       }
     }
   }
